@@ -34,19 +34,36 @@ export class ConversationTypesProvider {
   }
 
   private async loadBuiltInTemplates() {
+    // const builtInConversationTypes = [
+    //   await this.loadBuiltinTemplate("chat", "chat-en.rdt.md"),
+    //   await this.loadBuiltinTemplate("fun", "code-sonnet.rdt.md"),
+    //   await this.loadBuiltinTemplate("fun", "drunken-pirate.rdt.md"),
+    //   await this.loadBuiltinTemplate("task", "diagnose-errors.rdt.md"),
+    //   await this.loadBuiltinTemplate("task", "document-code.rdt.md"),
+    //   await this.loadBuiltinTemplate("task", "edit-code.rdt.md"),
+    //   await this.loadBuiltinTemplate("task", "explain-code.rdt.md"),
+    //   await this.loadBuiltinTemplate("task", "explain-code-w-context.rdt.md"),
+    //   await this.loadBuiltinTemplate("task", "find-bugs.rdt.md"),
+    //   await this.loadBuiltinTemplate("task", "generate-code.rdt.md"),
+    //   await this.loadBuiltinTemplate("task", "generate-unit-test.rdt.md"),
+    //   await this.loadBuiltinTemplate("task", "improve-readability.rdt.md"),
+    // ];
     const builtInConversationTypes = [
-      await this.loadBuiltinTemplate("chat", "chat-en.rdt.md"),
+      await this.loadBuiltinTemplate("chat", "chat-zh.rdt.md"),
       await this.loadBuiltinTemplate("fun", "code-sonnet.rdt.md"),
       await this.loadBuiltinTemplate("fun", "drunken-pirate.rdt.md"),
-      await this.loadBuiltinTemplate("task", "diagnose-errors.rdt.md"),
-      await this.loadBuiltinTemplate("task", "document-code.rdt.md"),
-      await this.loadBuiltinTemplate("task", "edit-code.rdt.md"),
-      await this.loadBuiltinTemplate("task", "explain-code.rdt.md"),
-      await this.loadBuiltinTemplate("task", "explain-code-w-context.rdt.md"),
-      await this.loadBuiltinTemplate("task", "find-bugs.rdt.md"),
-      await this.loadBuiltinTemplate("task", "generate-code.rdt.md"),
-      await this.loadBuiltinTemplate("task", "generate-unit-test.rdt.md"),
-      await this.loadBuiltinTemplate("task", "improve-readability.rdt.md"),
+      await this.loadBuiltinTemplate("task", "diagnose-errors-zh.rdt.md"),
+      await this.loadBuiltinTemplate("task", "document-code-zh.rdt.md"),
+      await this.loadBuiltinTemplate("task", "edit-code-zh.rdt.md"),
+      await this.loadBuiltinTemplate("task", "explain-code-zh.rdt.md"),
+      await this.loadBuiltinTemplate(
+        "task",
+        "explain-code-w-context-zh.rdt.md"
+      ),
+      await this.loadBuiltinTemplate("task", "find-bugs-zh.rdt.md"),
+      await this.loadBuiltinTemplate("task", "generate-code-zh.rdt.md"),
+      await this.loadBuiltinTemplate("task", "generate-unit-test-zh.rdt.md"),
+      await this.loadBuiltinTemplate("task", "improve-readability-zh.rdt.md"),
     ];
 
     for (const conversationType of builtInConversationTypes) {

@@ -59,7 +59,7 @@ export const activate = async (context: vscode.ExtensionContext) => {
     getConversationType(id: string) {
       return conversationTypesProvider.getConversationType(id);
     },
-    basicChatTemplateId: "chat-en",
+    basicChatTemplateId: "chat-zh",
     logger: vscodeLogger,
   });
 
@@ -90,7 +90,7 @@ export const activate = async (context: vscode.ExtensionContext) => {
       chatController.createConversation("generate-unit-test");
     }),
     vscode.commands.registerCommand("privy.startChat", () => {
-      chatController.createConversation("chat-en");
+      chatController.createConversation("chat-zh");
     }),
     vscode.commands.registerCommand("privy.editCode", () => {
       chatController.createConversation("edit-code");
@@ -124,7 +124,7 @@ export const activate = async (context: vscode.ExtensionContext) => {
       await chatController.createConversation(result.id);
     }),
     vscode.commands.registerCommand("privy.touchBar.startChat", () => {
-      chatController.createConversation("chat-en");
+      chatController.createConversation("chat-zh");
     }),
     vscode.commands.registerCommand("privy.showChatPanel", async () => {
       await chatController.showChatPanel();
