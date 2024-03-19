@@ -137,7 +137,7 @@ export const activate = async (context: vscode.ExtensionContext) => {
     vscode.commands.registerCommand("privy.openSettings", async () => {
       await vscode.commands.executeCommand(
         "workbench.action.openSettings",
-        `@ext:privy.privy-vscode`
+        `@ext:privy.privy-vscode-chinese`
       );
     }),
     vscode.commands.registerCommand("privy.reloadTemplates", async () => {

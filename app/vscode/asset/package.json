@@ -1,8 +1,8 @@
 {
   "publisher": "Privy",
-  "name": "privy-vscode",
-  "version": "0.2.8",
-  "displayName": "Privy - AI coding Autocomplete and chat that runs locally. ",
+  "name": "privy-vscode-chinese",
+  "version": "0.0.1",
+  "displayName": "Privy Chinese - AI coding Autocomplete and chat that runs locally. ",
   "description": "Get code suggestions, chat with code, explain code, generate tests, find bugs, etc.",
   "keywords": [
     "ai",
@@ -52,37 +52,37 @@
     "commands": [
       {
         "command": "privy.startChat",
-        "title": "Start Chat 💬",
+        "title": "开始对话 💬",
         "category": "Privy",
         "icon": "$(comment-discussion)"
       },
       {
         "command": "privy.explainCode",
-        "title": "Explain Code",
+        "title": "解释代码",
         "category": "Privy",
         "icon": "$(comment-discussion)"
       },
       {
         "command": "privy.generateCode",
-        "title": "Generate Code 🪄",
+        "title": "生成代码 🪄",
         "category": "Privy",
         "icon": "$(wand)"
       },
       {
         "command": "privy.generateUnitTest",
-        "title": "Generate Unit Test 🪄",
+        "title": "生成单元测试 🪄",
         "category": "Privy",
         "icon": "$(beaker)"
       },
       {
         "command": "privy.diagnoseErrors",
-        "title": "Diagnose Errors",
+        "title": "诊断错误",
         "category": "Privy",
         "icon": "$(search-fuzzy)"
       },
       {
         "command": "privy.findBugs",
-        "title": "Find Bugs",
+        "title": "寻找 Bug",
         "category": "Privy",
         "icon": "$(bug)"
       },
@@ -93,31 +93,31 @@
       },
       {
         "command": "privy.showChatPanel",
-        "title": "Show Chat Panel 💬",
+        "title": " 显示对话页 💬",
         "category": "Privy",
         "icon": "$(comment-discussion)"
       },
       {
         "command": "privy.getStarted",
-        "title": "Get Started",
+        "title": "开始教程",
         "category": "Privy",
         "icon": "$(question)"
       },
       {
         "command": "privy.openSettings",
-        "title": "Open Settings",
+        "title": "打开配置",
         "category": "Privy",
         "icon": "$(settings)"
       },
       {
         "command": "privy.reloadTemplates",
-        "title": "Reload Templates",
+        "title": "重新加载模板",
         "category": "Privy",
         "icon": "$(sync)"
       },
       {
         "command": "privy.showLogs",
-        "title": "Show Logs",
+        "title": "显示日志",
         "category": "Privy",
         "icon": "$(output)"
       }
@@ -183,7 +183,7 @@
         },
         "privy.autocomplete.model": {
           "type": "string",
-          "default": "deepseek-coder:1.3b-base",
+          "default": "deepseek-coder:6.7b",
           "markdownDescription": "Enter the name of Ollama model to use for autocomplete.",
           "order": 5
         },
@@ -195,10 +195,11 @@
         },
         "privy.model": {
           "type": "string",
-          "default": "mistral:instruct",
+          "default": "deekseep-coder:6.7b-instruct",
           "enum": [
             "mistral:instruct",
             "codellama:instruct",
+            "deekseep-coder:6.7b",
             "custom"
           ],
           "enumDescriptions": [
