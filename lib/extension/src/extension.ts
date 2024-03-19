@@ -95,6 +95,9 @@ export const activate = async (context: vscode.ExtensionContext) => {
     vscode.commands.registerCommand("privy.editCode", () => {
       chatController.createConversation("edit-code");
     }),
+    vscode.commands.registerCommand("privy.generateComments", () => {
+      chatController.createConversation("generate-comments");
+    }),
     vscode.commands.registerCommand("privy.startCustomChat", async () => {
       const items = conversationTypesProvider
         .getConversationTypes()

@@ -64,6 +64,7 @@ export class ConversationTypesProvider {
       await this.loadBuiltinTemplate("task", "generate-code-zh.rdt.md"),
       await this.loadBuiltinTemplate("task", "generate-unit-test-zh.rdt.md"),
       await this.loadBuiltinTemplate("task", "improve-readability-zh.rdt.md"),
+      await this.loadBuiltinTemplate("task", "generate-comments-zh.rdt.md"),
     ];
 
     for (const conversationType of builtInConversationTypes) {

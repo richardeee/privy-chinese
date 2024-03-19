@@ -120,6 +120,12 @@
         "title": "显示日志",
         "category": "Privy",
         "icon": "$(output)"
+      },
+      {
+        "command": "privy.generateComments",
+        "title": "生成注释",
+        "category": "Privy",
+        "icon": "$(comment-discussion)"
       }
     ],
     "configuration": {
@@ -326,6 +332,10 @@
         },
         {
           "command": "privy.diagnoseErrors",
+          "group": "privy"
+        },
+        {
+          "command": "privy.generateComments",
           "group": "privy"
         }
       ]
