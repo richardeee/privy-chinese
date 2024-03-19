@@ -1,6 +1,6 @@
 # Privy Chinese 部署与配置指南
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > This Repo is a clone of the [Privy](https://github.com/srikanth235/privy). Please follow all license and rules of the original repo, thanks.
 
 ## 1. 部署私有模型
